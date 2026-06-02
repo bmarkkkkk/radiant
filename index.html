@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title id="page-title-el">Radiant Lash & Beauty</title>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet"/>
+<html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title id="page-title-el">Radiant Lash &amp; Beauty</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&amp;family=DM+Sans:wght@300;400;500&amp;family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;family=Lato:wght@300;400&amp;family=Raleway:wght@300;400;500&amp;display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
@@ -163,14 +162,14 @@ footer{background:var(--charcoal);padding:60px;display:grid;grid-template-column
 #pw-cancel{background:none;border:none;font-size:12px;color:var(--mid);cursor:pointer;margin-top:10px;text-decoration:underline;}
 </style>
 </head>
-<body>
+<body style="font-family: &quot;DM Sans&quot;, sans-serif;">
 
 <!-- PASSWORD GATE -->
-<div id="pw-gate">
+<div id="pw-gate" class="">
   <div id="pw-box">
     <h3>Admin Access</h3>
     <p>Enter your password to edit the site</p>
-    <input id="pw-input" type="password" placeholder="••••••••"/>
+    <input id="pw-input" type="password" placeholder="••••••••">
     <button id="pw-submit">Unlock Editor</button>
     <div id="pw-error"></div>
     <button id="pw-cancel">Cancel</button>
@@ -178,21 +177,21 @@ footer{background:var(--charcoal);padding:60px;display:grid;grid-template-column
 </div>
 
 <!-- ADMIN PANEL -->
-<div id="admin-overlay">
+<div id="admin-overlay" class="">
  <div id="admin-box">
   <div id="admin-header">
     <h2>Site <em>Editor</em></h2>
     <div id="admin-header-right">
-      <button id="admin-save-top">⬇ Save & Download</button>
+      <button id="admin-save-top">⬇ Save &amp; Download</button>
       <button id="admin-close">✕ Close</button>
     </div>
   </div>
   <div id="admin-tabs">
-    <button class="atab active" data-tab="general">General</button>
+    <button class="atab" data-tab="general">General</button>
     <button class="atab" data-tab="nav">Nav</button>
     <button class="atab" data-tab="hero">Hero</button>
     <button class="atab" data-tab="about">About</button>
-    <button class="atab" data-tab="services">Services</button>
+    <button class="atab active" data-tab="services">Services</button>
     <button class="atab" data-tab="philosophy">Philosophy</button>
     <button class="atab" data-tab="whyus">Why Us</button>
     <button class="atab" data-tab="reviews">Reviews</button>
@@ -204,12 +203,12 @@ footer{background:var(--charcoal);padding:60px;display:grid;grid-template-column
   <div id="admin-body">
 
     <!-- GENERAL -->
-    <div class="tab-panel active" id="tab-general">
+    <div class="tab-panel" id="tab-general">
       <p class="tab-intro">These settings affect the whole site — browser tab title, business name, and overall font style.</p>
-      <div class="field-group"><label>Browser Tab Title</label><input id="e-page-title"/></div>
-      <div class="field-group"><label>Business Name (main text)</label><input id="e-biz-name"/></div>
-      <div class="field-group"><label>Business Name Accent Word (shown in pink — usually "&")</label><input id="e-biz-accent"/></div>
-      <div class="field-group"><label>Copyright Line (footer bottom left)</label><input id="e-copyright"/></div>
+      <div class="field-group"><label>Browser Tab Title</label><input id="e-page-title"></div>
+      <div class="field-group"><label>Business Name (main text)</label><input id="e-biz-name"></div>
+      <div class="field-group"><label>Business Name Accent Word (shown in pink — usually "&amp;")</label><input id="e-biz-accent"></div>
+      <div class="field-group"><label>Copyright Line (footer bottom left)</label><input id="e-copyright"></div>
       <div class="field-group"><label>Body Font</label>
         <select id="e-body-font">
           <option value="'DM Sans',sans-serif">DM Sans (current)</option>
@@ -232,93 +231,138 @@ footer{background:var(--charcoal);padding:60px;display:grid;grid-template-column
       <p class="tab-intro">Edit the top navigation bar — links and the Book Now button.</p>
       <div class="sdiv">Nav Links</div>
       <div class="two-col">
-        <div class="field-group"><label>Link 1 Label</label><input id="e-nav1-label" value="Services"/></div>
-        <div class="field-group"><label>Link 1 Anchor (e.g. #services)</label><input id="e-nav1-href" value="#services"/></div>
-        <div class="field-group"><label>Link 2 Label</label><input id="e-nav2-label" value="About"/></div>
-        <div class="field-group"><label>Link 2 Anchor</label><input id="e-nav2-href" value="#about"/></div>
-        <div class="field-group"><label>Link 3 Label</label><input id="e-nav3-label" value="Contact"/></div>
-        <div class="field-group"><label>Link 3 Anchor</label><input id="e-nav3-href" value="#contact"/></div>
+        <div class="field-group"><label>Link 1 Label</label><input id="e-nav1-label" value="Services"></div>
+        <div class="field-group"><label>Link 1 Anchor (e.g. #services)</label><input id="e-nav1-href" value="#services"></div>
+        <div class="field-group"><label>Link 2 Label</label><input id="e-nav2-label" value="About"></div>
+        <div class="field-group"><label>Link 2 Anchor</label><input id="e-nav2-href" value="#about"></div>
+        <div class="field-group"><label>Link 3 Label</label><input id="e-nav3-label" value="Contact"></div>
+        <div class="field-group"><label>Link 3 Anchor</label><input id="e-nav3-href" value="#contact"></div>
       </div>
       <div class="sdiv">Book Button</div>
       <div class="two-col">
-        <div class="field-group"><label>Button Label</label><input id="e-nav-book-label"/></div>
-        <div class="field-group"><label>Button URL</label><input id="e-nav-book-url"/></div>
+        <div class="field-group"><label>Button Label</label><input id="e-nav-book-label"></div>
+        <div class="field-group"><label>Button URL</label><input id="e-nav-book-url"></div>
       </div>
     </div>
 
     <!-- HERO -->
     <div class="tab-panel" id="tab-hero">
       <p class="tab-intro">The first thing visitors see. Use [em]word[/em] for italic pink text in headlines.</p>
-      <div class="field-group"><label>Location Tag (top line)</label><input id="e-eyebrow"/></div>
+      <div class="field-group"><label>Location Tag (top line)</label><input id="e-eyebrow"></div>
       <div class="field-group"><label>Main Headline — use [em]word[/em] for italic pink, use Enter for line breaks</label><textarea id="e-title" rows="3"></textarea></div>
       <div class="field-group"><label>Subtext Paragraph</label><textarea id="e-sub" rows="3"></textarea></div>
       <div class="sdiv">Buttons</div>
       <div class="two-col">
-        <div class="field-group"><label>Primary Button Label</label><input id="e-book-label"/></div>
-        <div class="field-group"><label>Primary Button URL</label><input id="e-book-url"/></div>
-        <div class="field-group"><label>Secondary Link Label</label><input id="e-ghost-label"/></div>
-        <div class="field-group"><label>Secondary Link Target (anchor)</label><input id="e-ghost-href"/></div>
+        <div class="field-group"><label>Primary Button Label</label><input id="e-book-label"></div>
+        <div class="field-group"><label>Primary Button URL</label><input id="e-book-url"></div>
+        <div class="field-group"><label>Secondary Link Label</label><input id="e-ghost-label"></div>
+        <div class="field-group"><label>Secondary Link Target (anchor)</label><input id="e-ghost-href"></div>
       </div>
       <div class="sdiv">Badge (inside pink panel)</div>
       <div class="two-col">
-        <div class="field-group"><label>Badge Main Text</label><input id="e-badge-text"/><p class="field-hint">Use | for a line break e.g. Radiant|Lash & Beauty</p></div>
-        <div class="field-group"><label>Badge Sub Text</label><input id="e-badge-sub"/></div>
+        <div class="field-group"><label>Badge Main Text</label><input id="e-badge-text"><p class="field-hint">Use | for a line break e.g. Radiant|Lash &amp; Beauty</p></div>
+        <div class="field-group"><label>Badge Sub Text</label><input id="e-badge-sub"></div>
       </div>
       <div class="sdiv">Floating Pills</div>
       <p class="field-hint" style="margin-bottom:10px;">These are the small tags floating in the pink panel. Edit or remove any.</p>
-      <div class="pill-editor" id="pill-editor"></div>
+      <div class="pill-editor" id="pill-editor"><div class="pill-row"><input id="pill-0" value="Lashes · Brows · Makeup"><button onclick="this.parentElement.remove()">Remove</button></div><div class="pill-row"><input id="pill-1" value="Energy Healing · Jewelry"><button onclick="this.parentElement.remove()">Remove</button></div><div class="pill-row"><input id="pill-2" value="Female-Owned Boutique"><button onclick="this.parentElement.remove()">Remove</button></div></div>
       <button class="add-pill-btn" id="add-pill-btn">+ Add a pill</button>
     </div>
 
     <!-- ABOUT -->
     <div class="tab-panel" id="tab-about">
-      <div class="field-group"><label>Section Eyebrow Label</label><input id="e-about-label"/></div>
+      <div class="field-group"><label>Section Eyebrow Label</label><input id="e-about-label"></div>
       <div class="field-group"><label>Headline — use [em]word[/em] for italic</label><textarea id="e-about-title" rows="2"></textarea></div>
       <div class="field-group"><label>Body Paragraph</label><textarea id="e-about-body" rows="4"></textarea></div>
-      <div class="field-group"><label>Pink Box Tagline Quote</label><input id="e-about-tagline"/></div>
+      <div class="field-group"><label>Pink Box Tagline Quote</label><input id="e-about-tagline"></div>
       <div class="sdiv">4 Stats</div>
       <div class="two-col">
-        <div class="field-group"><label>Stat 1 — Big Number / Text</label><input id="e-s1n"/></div>
-        <div class="field-group"><label>Stat 1 — Label</label><input id="e-s1l"/></div>
-        <div class="field-group"><label>Stat 2 — Big Number / Text</label><input id="e-s2n"/></div>
-        <div class="field-group"><label>Stat 2 — Label</label><input id="e-s2l"/></div>
-        <div class="field-group"><label>Stat 3 — Big Number / Text</label><input id="e-s3n"/></div>
-        <div class="field-group"><label>Stat 3 — Label</label><input id="e-s3l"/></div>
-        <div class="field-group"><label>Stat 4 — Big Number / Text</label><input id="e-s4n"/></div>
-        <div class="field-group"><label>Stat 4 — Label</label><input id="e-s4l"/></div>
+        <div class="field-group"><label>Stat 1 — Big Number / Text</label><input id="e-s1n"></div>
+        <div class="field-group"><label>Stat 1 — Label</label><input id="e-s1l"></div>
+        <div class="field-group"><label>Stat 2 — Big Number / Text</label><input id="e-s2n"></div>
+        <div class="field-group"><label>Stat 2 — Label</label><input id="e-s2l"></div>
+        <div class="field-group"><label>Stat 3 — Big Number / Text</label><input id="e-s3n"></div>
+        <div class="field-group"><label>Stat 3 — Label</label><input id="e-s3l"></div>
+        <div class="field-group"><label>Stat 4 — Big Number / Text</label><input id="e-s4n"></div>
+        <div class="field-group"><label>Stat 4 — Label</label><input id="e-s4l"></div>
       </div>
     </div>
 
     <!-- SERVICES -->
-    <div class="tab-panel" id="tab-services">
+    <div class="tab-panel active" id="tab-services">
       <p class="tab-intro">Edit each service card. The last card (the pink CTA) is edited in the Booking tab.</p>
-      <div class="field-group"><label>Section Eyebrow</label><input id="e-svc-label"/></div>
+      <div class="field-group"><label>Section Eyebrow</label><input id="e-svc-label"></div>
       <div class="field-group"><label>Section Headline — use [em]word[/em]</label><textarea id="e-svc-title" rows="2"></textarea></div>
-      <div class="field-group"><label>Section Button Label</label><input id="e-svc-btn-label"/></div>
-      <div class="field-group"><label>Section Button URL</label><input id="e-svc-btn-url"/></div>
+      <div class="field-group"><label>Section Button Label</label><input id="e-svc-btn-label"></div>
+      <div class="field-group"><label>Section Button URL</label><input id="e-svc-btn-url"></div>
       <div class="sdiv">Service Cards</div>
-      <div id="services-editor"></div>
+      <div id="services-editor">
+      <div class="svc-block">
+        <div class="svc-block-title">Service 1</div>
+        <div class="two-col">
+          <div class="field-group"><label>Icon / Symbol</label><input id="svc-icon-0" value="✦"><p class="field-hint">Paste any symbol: ✦ ◇ ○ ◈ ✿ ❋ ✧</p></div>
+          <div class="field-group"><label>Name</label><input id="svc-name-0" value="Lash Extensions"></div>
+        </div>
+        <div class="field-group"><label>Description</label><textarea id="svc-desc-0">Classic, hybrid, and volume sets customized to your eye shape and lifestyle. Wake up looking effortlessly beautiful every day.</textarea></div>
+        <div class="field-group"><label>Price / Tag Line</label><input id="svc-price-0" value="Full Set · Fills Available"></div>
+      </div>
+      <div class="svc-block">
+        <div class="svc-block-title">Service 2</div>
+        <div class="two-col">
+          <div class="field-group"><label>Icon / Symbol</label><input id="svc-icon-1" value="◇"><p class="field-hint">Paste any symbol: ✦ ◇ ○ ◈ ✿ ❋ ✧</p></div>
+          <div class="field-group"><label>Name</label><input id="svc-name-1" value="Brow Services"></div>
+        </div>
+        <div class="field-group"><label>Description</label><textarea id="svc-desc-1">Shaping, tinting, and lamination to frame your face with perfectly sculpted brows tailored to your unique features.</textarea></div>
+        <div class="field-group"><label>Price / Tag Line</label><input id="svc-price-1" value="Shape · Tint · Lamination"></div>
+      </div>
+      <div class="svc-block">
+        <div class="svc-block-title">Service 3</div>
+        <div class="two-col">
+          <div class="field-group"><label>Icon / Symbol</label><input id="svc-icon-2" value="○"><p class="field-hint">Paste any symbol: ✦ ◇ ○ ◈ ✿ ❋ ✧</p></div>
+          <div class="field-group"><label>Name</label><input id="svc-name-2" value="Makeup"></div>
+        </div>
+        <div class="field-group"><label>Description</label><textarea id="svc-desc-2">From everyday glam to special occasions, professional makeup application that enhances your natural beauty.</textarea></div>
+        <div class="field-group"><label>Price / Tag Line</label><input id="svc-price-2" value="Application · Lessons"></div>
+      </div>
+      <div class="svc-block">
+        <div class="svc-block-title">Service 4</div>
+        <div class="two-col">
+          <div class="field-group"><label>Icon / Symbol</label><input id="svc-icon-3" value="∿"><p class="field-hint">Paste any symbol: ✦ ◇ ○ ◈ ✿ ❋ ✧</p></div>
+          <div class="field-group"><label>Name</label><input id="svc-name-3" value="Energy Healing"></div>
+        </div>
+        <div class="field-group"><label>Description</label><textarea id="svc-desc-3">Holistic wellness sessions designed to restore balance, promote calm, and reconnect you with your inner radiance.</textarea></div>
+        <div class="field-group"><label>Price / Tag Line</label><input id="svc-price-3" value="Healing Sessions"></div>
+      </div>
+      <div class="svc-block">
+        <div class="svc-block-title">Service 5</div>
+        <div class="two-col">
+          <div class="field-group"><label>Icon / Symbol</label><input id="svc-icon-4" value="◈"><p class="field-hint">Paste any symbol: ✦ ◇ ○ ◈ ✿ ❋ ✧</p></div>
+          <div class="field-group"><label>Name</label><input id="svc-name-4" value="Jewelry &amp; Accessories"></div>
+        </div>
+        <div class="field-group"><label>Description</label><textarea id="svc-desc-4">A thoughtfully curated collection of jewelry and accessories through @_radiantcollection to complement your look.</textarea></div>
+        <div class="field-group"><label>Price / Tag Line</label><input id="svc-price-4" value="Shop In-Studio"></div>
+      </div></div>
     </div>
 
     <!-- PHILOSOPHY -->
     <div class="tab-panel" id="tab-philosophy">
       <p class="tab-intro">The dark full-width quote band in the middle of the page.</p>
-      <div class="field-group"><label>Section Eyebrow</label><input id="e-phil-label"/></div>
+      <div class="field-group"><label>Section Eyebrow</label><input id="e-phil-label"></div>
       <div class="field-group"><label>Big Quote Text</label><textarea id="e-phil-quote" rows="3"></textarea></div>
-      <div class="field-group"><label>Attribution</label><input id="e-phil-attr"/></div>
+      <div class="field-group"><label>Attribution</label><input id="e-phil-attr"></div>
     </div>
 
     <!-- WHY US -->
     <div class="tab-panel" id="tab-whyus">
       <p class="tab-intro">The two-column section with the bullet list on the left.</p>
       <div class="sdiv">Left Column</div>
-      <div class="field-group"><label>Eyebrow Label</label><input id="e-why-label"/></div>
+      <div class="field-group"><label>Eyebrow Label</label><input id="e-why-label"></div>
       <div class="field-group"><label>Headline — use [em]word[/em]</label><textarea id="e-why-title" rows="2"></textarea></div>
       <div class="field-group"><label>Bullet Items</label></div>
-      <div class="specialty-editor" id="specialty-editor"></div>
+      <div class="specialty-editor" id="specialty-editor"><div class="pill-row"><input id="spec-0" value="Personalized consultations for every client"><button onclick="this.parentElement.remove()">Remove</button></div><div class="pill-row"><input id="spec-1" value="Holistic approach to inner &amp; outer beauty"><button onclick="this.parentElement.remove()">Remove</button></div><div class="pill-row"><input id="spec-2" value="Female-owned and operated boutique"><button onclick="this.parentElement.remove()">Remove</button></div><div class="pill-row"><input id="spec-3" value="Intimate, one-on-one studio experience"><button onclick="this.parentElement.remove()">Remove</button></div><div class="pill-row"><input id="spec-4" value="Curated accessories to complete your look"><button onclick="this.parentElement.remove()">Remove</button></div><div class="pill-row"><input id="spec-5" value="Serving the Westlake Village community"><button onclick="this.parentElement.remove()">Remove</button></div></div>
       <button class="add-pill-btn" id="add-specialty-btn">+ Add a bullet item</button>
       <div class="sdiv">Right Column Header</div>
-      <div class="field-group"><label>Eyebrow Label</label><input id="e-rev-label"/></div>
+      <div class="field-group"><label>Eyebrow Label</label><input id="e-rev-label"></div>
       <div class="field-group"><label>Headline — use [em]word[/em]</label><textarea id="e-rev-title" rows="2"></textarea></div>
     </div>
 
@@ -327,78 +371,141 @@ footer{background:var(--charcoal);padding:60px;display:grid;grid-template-column
       <p class="tab-intro">The two client testimonials shown in the right column of the Why Us section.</p>
       <div class="sdiv">Review 1</div>
       <div class="field-group"><label>Review Text</label><textarea id="e-r1" rows="3"></textarea></div>
-      <div class="field-group"><label>Attribution (e.g. ★★★★★ — Happy Client)</label><input id="e-r1a"/></div>
+      <div class="field-group"><label>Attribution (e.g. ★★★★★ — Happy Client)</label><input id="e-r1a"></div>
       <div class="sdiv">Review 2</div>
       <div class="field-group"><label>Review Text</label><textarea id="e-r2" rows="3"></textarea></div>
-      <div class="field-group"><label>Attribution</label><input id="e-r2a"/></div>
+      <div class="field-group"><label>Attribution</label><input id="e-r2a"></div>
     </div>
 
     <!-- BOOKING -->
     <div class="tab-panel" id="tab-booking">
       <p class="tab-intro">The blush-colored call-to-action section near the bottom, and the pink CTA card in the services grid.</p>
       <div class="sdiv">Booking Section</div>
-      <div class="field-group"><label>Eyebrow Label</label><input id="e-bk-label"/></div>
+      <div class="field-group"><label>Eyebrow Label</label><input id="e-bk-label"></div>
       <div class="field-group"><label>Headline — use [em]word[/em]</label><textarea id="e-bk-title" rows="2"></textarea></div>
       <div class="field-group"><label>Subtext</label><textarea id="e-bk-sub" rows="3"></textarea></div>
       <div class="two-col">
-        <div class="field-group"><label>Button Label</label><input id="e-bk-btn"/></div>
-        <div class="field-group"><label>Button URL</label><input id="e-bk-url"/></div>
+        <div class="field-group"><label>Button Label</label><input id="e-bk-btn"></div>
+        <div class="field-group"><label>Button URL</label><input id="e-bk-url"></div>
       </div>
       <div class="sdiv">Services Grid CTA Card (bottom-right card)</div>
       <div class="field-group"><label>CTA Card Text</label><textarea id="e-svc-cta-text" rows="2"></textarea></div>
       <div class="two-col">
-        <div class="field-group"><label>CTA Card Button Label</label><input id="e-svc-cta-btn"/></div>
-        <div class="field-group"><label>CTA Card Button URL</label><input id="e-svc-cta-url"/></div>
+        <div class="field-group"><label>CTA Card Button Label</label><input id="e-svc-cta-btn"></div>
+        <div class="field-group"><label>CTA Card Button URL</label><input id="e-svc-cta-url"></div>
       </div>
     </div>
 
     <!-- FOOTER -->
     <div class="tab-panel" id="tab-footer">
       <p class="tab-intro">Everything in the dark footer at the bottom of the page.</p>
-      <div class="field-group"><label>Footer Tagline (below business name)</label><input id="e-footer-tag"/></div>
+      <div class="field-group"><label>Footer Tagline (below business name)</label><input id="e-footer-tag"></div>
       <div class="sdiv">Address Column</div>
-      <div class="field-group"><label>Column Heading</label><input id="e-footer-addr-heading"/></div>
-      <div class="field-group"><label>Street Address</label><input id="e-footer-street"/></div>
-      <div class="field-group"><label>City, State</label><input id="e-footer-city"/></div>
-      <div class="field-group"><label>Phone Number (leave blank to hide)</label><input id="e-footer-phone"/></div>
-      <div class="field-group"><label>Email Address (leave blank to hide)</label><input id="e-footer-email"/></div>
+      <div class="field-group"><label>Column Heading</label><input id="e-footer-addr-heading"></div>
+      <div class="field-group"><label>Street Address</label><input id="e-footer-street"></div>
+      <div class="field-group"><label>City, State</label><input id="e-footer-city"></div>
+      <div class="field-group"><label>Phone Number (leave blank to hide)</label><input id="e-footer-phone"></div>
+      <div class="field-group"><label>Email Address (leave blank to hide)</label><input id="e-footer-email"></div>
       <div class="sdiv">Social / Links Column</div>
-      <div class="field-group"><label>Column Heading</label><input id="e-footer-social-heading"/></div>
+      <div class="field-group"><label>Column Heading</label><input id="e-footer-social-heading"></div>
       <div class="two-col">
-        <div class="field-group"><label>Link 1 Label</label><input id="e-fl1-label"/></div>
-        <div class="field-group"><label>Link 1 URL</label><input id="e-fl1-url"/></div>
-        <div class="field-group"><label>Link 2 Label</label><input id="e-fl2-label"/></div>
-        <div class="field-group"><label>Link 2 URL</label><input id="e-fl2-url"/></div>
-        <div class="field-group"><label>Link 3 Label</label><input id="e-fl3-label"/></div>
-        <div class="field-group"><label>Link 3 URL</label><input id="e-fl3-url"/></div>
-        <div class="field-group"><label>Link 4 Label</label><input id="e-fl4-label"/></div>
-        <div class="field-group"><label>Link 4 URL</label><input id="e-fl4-url"/></div>
+        <div class="field-group"><label>Link 1 Label</label><input id="e-fl1-label"></div>
+        <div class="field-group"><label>Link 1 URL</label><input id="e-fl1-url"></div>
+        <div class="field-group"><label>Link 2 Label</label><input id="e-fl2-label"></div>
+        <div class="field-group"><label>Link 2 URL</label><input id="e-fl2-url"></div>
+        <div class="field-group"><label>Link 3 Label</label><input id="e-fl3-label"></div>
+        <div class="field-group"><label>Link 3 URL</label><input id="e-fl3-url"></div>
+        <div class="field-group"><label>Link 4 Label</label><input id="e-fl4-label"></div>
+        <div class="field-group"><label>Link 4 URL</label><input id="e-fl4-url"></div>
       </div>
       <div class="sdiv">Footer Bottom Bar</div>
       <div class="two-col">
-        <div class="field-group"><label>Copyright Text (left)</label><input id="e-copyright2"/></div>
-        <div class="field-group"><label>Right Side Text</label><input id="e-footer-right"/></div>
+        <div class="field-group"><label>Copyright Text (left)</label><input id="e-copyright2"></div>
+        <div class="field-group"><label>Right Side Text</label><input id="e-footer-right"></div>
       </div>
     </div>
 
     <!-- COLORS -->
     <div class="tab-panel" id="tab-colors">
-      <p class="tab-intro">Change the color palette of the entire site. Click the color swatch or type a hex code. Changes preview live when you scroll back to the page — save & download to keep them.</p>
-      <div class="color-row" id="color-editor"></div>
+      <p class="tab-intro">Change the color palette of the entire site. Click the color swatch or type a hex code. Changes preview live when you scroll back to the page — save &amp; download to keep them.</p>
+      <div class="color-row" id="color-editor">
+      <div class="field-group">
+        <label>Page Background</label>
+        <div class="color-field">
+          <input type="color" id="cp-cream" value="#faf8f5">
+          <input type="text" id="ct-cream" value="#faf8f5" maxlength="7" placeholder="#ffffff">
+        </div>
+      </div>
+      <div class="field-group">
+        <label>Section Background</label>
+        <div class="color-field">
+          <input type="color" id="cp-warm-white" value="#fffef9">
+          <input type="text" id="ct-warm-white" value="#fffef9" maxlength="7" placeholder="#ffffff">
+        </div>
+      </div>
+      <div class="field-group">
+        <label>Blush / Pink Panels</label>
+        <div class="color-field">
+          <input type="color" id="cp-blush" value="#f2e8e4">
+          <input type="text" id="ct-blush" value="#f2e8e4" maxlength="7" placeholder="#ffffff">
+        </div>
+      </div>
+      <div class="field-group">
+        <label>Accent / Labels</label>
+        <div class="color-field">
+          <input type="color" id="cp-dusty-rose" value="#c9a09a">
+          <input type="text" id="ct-dusty-rose" value="#c9a09a" maxlength="7" placeholder="#ffffff">
+        </div>
+      </div>
+      <div class="field-group">
+        <label>Dark Accent</label>
+        <div class="color-field">
+          <input type="color" id="cp-deep-rose" value="#8b5e5a">
+          <input type="text" id="ct-deep-rose" value="#8b5e5a" maxlength="7" placeholder="#ffffff">
+        </div>
+      </div>
+      <div class="field-group">
+        <label>Dark Sections / Text</label>
+        <div class="color-field">
+          <input type="color" id="cp-charcoal" value="#2a2220">
+          <input type="text" id="ct-charcoal" value="#2a2220" maxlength="7" placeholder="#ffffff">
+        </div>
+      </div>
+      <div class="field-group">
+        <label>Body Text</label>
+        <div class="color-field">
+          <input type="color" id="cp-mid" value="#6b5654">
+          <input type="text" id="ct-mid" value="#6b5654" maxlength="7" placeholder="#ffffff">
+        </div>
+      </div>
+      <div class="field-group">
+        <label>Price Tag Text</label>
+        <div class="color-field">
+          <input type="color" id="cp-gold" value="#b89a7a">
+          <input type="text" id="ct-gold" value="#b89a7a" maxlength="7" placeholder="#ffffff">
+        </div>
+      </div>
+      <div class="field-group">
+        <label>Borders</label>
+        <div class="color-field">
+          <input type="color" id="cp-border" value="#e8deda">
+          <input type="text" id="ct-border" value="#e8deda" maxlength="7" placeholder="#ffffff">
+        </div>
+      </div></div>
     </div>
 
     <!-- PASSWORD -->
     <div class="tab-panel" id="tab-password">
       <p class="tab-intro">Change the password required to open this editor.</p>
-      <div class="field-group"><label>Current Password</label><input id="e-pw-current" type="password" placeholder="Enter current password"/></div>
-      <div class="field-group"><label>New Password</label><input id="e-pw-new" type="password" placeholder="New password"/></div>
-      <div class="field-group"><label>Confirm New Password</label><input id="e-pw-confirm" type="password" placeholder="Confirm new password"/></div>
+      <div class="field-group"><label>Current Password</label><input id="e-pw-current" type="password" placeholder="Enter current password"></div>
+      <div class="field-group"><label>New Password</label><input id="e-pw-new" type="password" placeholder="New password"></div>
+      <div class="field-group"><label>Confirm New Password</label><input id="e-pw-confirm" type="password" placeholder="Confirm new password"></div>
       <button id="pw-change-btn" style="background:var(--charcoal);color:var(--cream);border:none;padding:10px 24px;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;border-radius:2px;">Change Password</button>
       <div id="pw-change-msg" style="font-size:12px;margin-top:10px;min-height:18px;"></div>
     </div>
 
     <div style="margin-top:24px;border-top:1px solid var(--border);padding-top:24px;">
-      <button id="admin-save-bottom">⬇ Save & Download Updated Site</button>
+      <button id="admin-save-bottom">⬇ Save &amp; Download Updated Site</button>
       <p class="save-note">Downloads a fresh index.html with all your edits. Upload it to GitHub to update your live site.</p>
     </div>
   </div>
@@ -407,7 +514,7 @@ footer{background:var(--charcoal);padding:60px;display:grid;grid-template-column
 
 <!-- NAV -->
 <nav>
-  <span class="nav-logo" id="nav-logo-click"><span id="biz-name-nav">Radiant Lash</span> <span id="biz-accent-nav">&</span> <span id="biz-name-nav2">Beauty</span></span>
+  <span class="nav-logo" id="nav-logo-click"><span id="biz-name-nav">Radiant Lash</span> <span id="biz-accent-nav">&amp;</span> <span id="biz-name-nav2">Beauty</span></span>
   <ul class="nav-links" id="nav-links-list">
     <li><a id="nav1" href="#services">Services</a></li>
     <li><a id="nav2" href="#about">About</a></li>
@@ -420,7 +527,7 @@ footer{background:var(--charcoal);padding:60px;display:grid;grid-template-column
 <section class="hero" id="home">
   <div class="hero-left">
     <p class="hero-eyebrow" id="hero-eyebrow">Westlake Village, California</p>
-    <h1 class="hero-title" id="hero-title">Beauty<br>That <em>Feels</em><br>Like You.</h1>
+    <h1 class="hero-title" id="hero-title" style="font-family: &quot;Cormorant Garamond&quot;, serif;">Beauty<br>That <em>Feels</em><br>Like You.</h1>
     <p class="hero-sub" id="hero-sub">A female-owned boutique dedicated to your inner and outer radiance. Lashes, brows, makeup, energy healing, and curated accessories — all in one thoughtful space.</p>
     <div class="hero-ctas">
       <a id="hero-book-btn" href="https://radiant-lash-and-beauty.square.site/" target="_blank" class="btn-primary">Book an Appointment</a>
@@ -432,14 +539,10 @@ footer{background:var(--charcoal);padding:60px;display:grid;grid-template-column
     <div class="hero-visual">
       <div class="hero-badge">
         <div class="hero-badge-icon">✦</div>
-        <div class="hero-badge-text" id="badge-text">Radiant<br>Lash & Beauty</div>
+        <div class="hero-badge-text" id="badge-text">Radiant<br>Lash &amp; Beauty</div>
         <div class="hero-badge-sub" id="badge-sub">Westlake Village, CA</div>
       </div>
-      <div class="hero-pills" id="pills-container">
-        <div class="hero-pill">Lashes · Brows · Makeup</div>
-        <div class="hero-pill">Energy Healing · Jewelry</div>
-        <div class="hero-pill">Female-Owned Boutique</div>
-      </div>
+      <div class="hero-pills" id="pills-container"><div class="hero-pill">Lashes · Brows · Makeup</div><div class="hero-pill">Energy Healing · Jewelry</div><div class="hero-pill">Female-Owned Boutique</div></div>
     </div>
   </div>
 </section>
@@ -454,8 +557,8 @@ footer{background:var(--charcoal);padding:60px;display:grid;grid-template-column
   </div>
   <div class="about-right">
     <p class="section-label" id="about-label">Our Story</p>
-    <h2 class="section-title" id="about-title">More Than a<br><em>Beauty Boutique</em></h2>
-    <p class="section-sub" id="about-body">Radiant Lash & Beauty was founded on the belief that true beauty is holistic. We offer a full range of lash and brow services, professional makeup, energy healing, and a curated collection of jewelry and accessories — because you deserve to glow from the inside out.</p>
+    <h2 class="section-title" id="about-title" style="font-family: &quot;Cormorant Garamond&quot;, serif;">More Than a<br><em>Beauty Boutique</em></h2>
+    <p class="section-sub" id="about-body">Radiant Lash &amp; Beauty was founded on the belief that true beauty is holistic. We offer a full range of lash and brow services, professional makeup, energy healing, and a curated collection of jewelry and accessories — because you deserve to glow from the inside out.</p>
     <div class="about-stats">
       <div class="stat"><div class="stat-num" id="s1n">100%</div><div class="stat-label" id="s1l">Female-owned</div></div>
       <div class="stat"><div class="stat-num" id="s2n">6+</div><div class="stat-label" id="s2l">Signature services</div></div>
@@ -470,7 +573,7 @@ footer{background:var(--charcoal);padding:60px;display:grid;grid-template-column
   <div class="services-header">
     <div>
       <p class="section-label" id="svc-label">What We Offer</p>
-      <h2 class="section-title" id="svc-title">Our <em>Services</em></h2>
+      <h2 class="section-title" id="svc-title" style="font-family: &quot;Cormorant Garamond&quot;, serif;">Our <em>Services</em></h2>
     </div>
     <a id="svc-header-btn" href="https://radiant-lash-and-beauty.square.site/" target="_blank" class="btn-primary">Book Any Service</a>
   </div>
@@ -479,7 +582,7 @@ footer{background:var(--charcoal);padding:60px;display:grid;grid-template-column
     <div class="service-card"><div class="service-icon">◇</div><div class="service-name">Brow Services</div><p class="service-desc">Shaping, tinting, and lamination to frame your face with perfectly sculpted brows tailored to your unique features.</p><div class="service-price">Shape · Tint · Lamination</div></div>
     <div class="service-card"><div class="service-icon">○</div><div class="service-name">Makeup</div><p class="service-desc">From everyday glam to special occasions, professional makeup application that enhances your natural beauty.</p><div class="service-price">Application · Lessons</div></div>
     <div class="service-card"><div class="service-icon">∿</div><div class="service-name">Energy Healing</div><p class="service-desc">Holistic wellness sessions designed to restore balance, promote calm, and reconnect you with your inner radiance.</p><div class="service-price">Healing Sessions</div></div>
-    <div class="service-card"><div class="service-icon">◈</div><div class="service-name">Jewelry & Accessories</div><p class="service-desc">A thoughtfully curated collection of jewelry and accessories through @_radiantcollection to complement your look.</p><div class="service-price">Shop In-Studio</div></div>
+    <div class="service-card"><div class="service-icon"></div><div class="service-name"></div><p class="service-desc"></p><div class="service-price"></div></div>
     <div class="service-card" id="svc-cta-card" style="background:var(--blush);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;"><p id="svc-cta-text" style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:300;font-style:italic;color:var(--deep-rose);margin-bottom:20px;line-height:1.4;">Ready to experience<br>your radiance?</p><a id="svc-cta-btn-el" href="https://radiant-lash-and-beauty.square.site/" target="_blank" class="btn-primary">Book Now →</a></div>
   </div>
 </section>
@@ -488,26 +591,19 @@ footer{background:var(--charcoal);padding:60px;display:grid;grid-template-column
 <section class="philosophy">
   <p class="section-label" id="phil-label">Our Philosophy</p>
   <p class="philosophy-quote" id="phil-quote">"True beauty is a reflection of how you feel — inside and out. We're here to help you shine."</p>
-  <p class="philosophy-attr" id="phil-attr">— Radiant Lash & Beauty</p>
+  <p class="philosophy-attr" id="phil-attr">— Radiant Lash &amp; Beauty</p>
 </section>
 
 <!-- WHY US + REVIEWS -->
 <section class="specialties">
   <div class="specialties-left">
     <p class="section-label" id="why-label">Why Clients Love Us</p>
-    <h2 class="section-title" id="why-title">The <em>Radiant</em><br>Difference</h2>
-    <div class="specialty-list" id="specialty-list">
-      <div class="specialty-item"><div class="specialty-dot"></div>Personalized consultations for every client</div>
-      <div class="specialty-item"><div class="specialty-dot"></div>Holistic approach to inner & outer beauty</div>
-      <div class="specialty-item"><div class="specialty-dot"></div>Female-owned and operated boutique</div>
-      <div class="specialty-item"><div class="specialty-dot"></div>Intimate, one-on-one studio experience</div>
-      <div class="specialty-item"><div class="specialty-dot"></div>Curated accessories to complete your look</div>
-      <div class="specialty-item"><div class="specialty-dot"></div>Serving the Westlake Village community</div>
-    </div>
+    <h2 class="section-title" id="why-title" style="font-family: &quot;Cormorant Garamond&quot;, serif;">The <em>Radiant</em><br>Difference</h2>
+    <div class="specialty-list" id="specialty-list"><div class="specialty-item"><div class="specialty-dot"></div>Personalized consultations for every client</div><div class="specialty-item"><div class="specialty-dot"></div>Holistic approach to inner &amp; outer beauty</div><div class="specialty-item"><div class="specialty-dot"></div>Female-owned and operated boutique</div><div class="specialty-item"><div class="specialty-dot"></div>Intimate, one-on-one studio experience</div><div class="specialty-item"><div class="specialty-dot"></div>Curated accessories to complete your look</div><div class="specialty-item"><div class="specialty-dot"></div>Serving the Westlake Village community</div></div>
   </div>
   <div class="specialties-right">
     <p class="section-label" id="rev-label">What Clients Say</p>
-    <h2 class="section-title" id="rev-title" style="font-size:32px;margin-bottom:40px;">Glowing<br><em>Reviews</em></h2>
+    <h2 class="section-title" id="rev-title" style="font-size: 32px; margin-bottom: 40px; font-family: &quot;Cormorant Garamond&quot;, serif;">Glowing<br><em>Reviews</em></h2>
     <div style="display:flex;flex-direction:column;gap:32px;">
       <div>
         <p id="review1" style="font-family:'Cormorant Garamond',serif;font-size:17px;font-style:italic;color:var(--charcoal);line-height:1.7;margin-bottom:12px;">"I always leave feeling amazing, refreshed, and brand new. I get so many compliments on my lashes!"</p>
@@ -524,7 +620,7 @@ footer{background:var(--charcoal);padding:60px;display:grid;grid-template-column
 <!-- BOOKING CTA -->
 <section class="booking" id="book">
   <p class="section-label" id="bk-label">Ready to Glow?</p>
-  <h2 class="section-title" id="bk-title">Book Your<br><em>Experience</em></h2>
+  <h2 class="section-title" id="bk-title" style="font-family: &quot;Cormorant Garamond&quot;, serif;">Book Your<br><em>Experience</em></h2>
   <p class="section-sub" id="bk-sub">Visit our booking page to schedule your appointment. New clients welcome — we can't wait to meet you.</p>
   <a id="bk-btn" href="https://radiant-lash-and-beauty.square.site/" target="_blank" class="btn-primary" style="font-size:13px;padding:16px 40px;">Book an Appointment →</a>
 </section>
@@ -532,14 +628,14 @@ footer{background:var(--charcoal);padding:60px;display:grid;grid-template-column
 <!-- FOOTER -->
 <footer id="contact">
   <div>
-    <span class="footer-logo"><span id="biz-name-footer">Radiant Lash</span> <span id="biz-accent-footer">&</span> <span id="biz-name-footer2">Beauty</span></span>
+    <span class="footer-logo"><span id="biz-name-footer">Radiant Lash</span> <span id="biz-accent-footer">&amp;</span> <span id="biz-name-footer2">Beauty</span></span>
     <p class="footer-tagline" id="footer-tag">Female-owned boutique dedicated to inner + outer beauty. Westlake Village, California.</p>
   </div>
   <div class="footer-col">
     <h4 id="footer-addr-heading">Location</h4>
     <p id="footer-address">860k Hampshire Rd<br>Westlake Village, CA</p>
-    <p id="footer-phone-el" style="margin-top:10px;"></p>
-    <p id="footer-email-el"></p>
+    <p id="footer-phone-el" style="margin-top: 10px; display: none;"></p>
+    <p id="footer-email-el" style="display: none;"></p>
   </div>
   <div class="footer-col">
     <h4 id="footer-social-heading">Connect</h4>
@@ -547,11 +643,11 @@ footer{background:var(--charcoal);padding:60px;display:grid;grid-template-column
       <li><a id="fl1" href="https://www.instagram.com/radiant_lashandbeauty/" target="_blank">Instagram @radiant_lashandbeauty</a></li>
       <li><a id="fl2" href="https://www.facebook.com/RadiantLashandBeauty/" target="_blank">Facebook</a></li>
       <li><a id="fl3" href="https://radiant-lash-and-beauty.square.site/" target="_blank">Book Online</a></li>
-      <li><a id="fl4" href="" target="_blank" style="display:none"></a></li>
+      <li style="display: none;"><a id="fl4" href="" target="_blank" style="display:none"></a></li>
     </ul>
   </div>
   <div class="footer-bottom">
-    <span id="copyright-el">© 2026 Radiant Lash & Beauty. All rights reserved.</span>
+    <span id="copyright-el">© 2026 Radiant Lash &amp; Beauty. All rights reserved.</span>
     <span id="footer-right-el">Westlake Village, CA</span>
   </div>
 </footer>
@@ -986,7 +1082,7 @@ function downloadSite(){
   // Update password string in script
   html=html.replace(/let ADMIN_PASSWORD\s*=\s*'[^']*'/,`let ADMIN_PASSWORD = '${ADMIN_PASSWORD}'`);
   // Remove open classes
-  html=html.replace(/\s?class="open"/g,'');
+  html=html.replace(/\s?/g,'');
 
   const blob=new Blob([html],{type:'text/html'});
   const a=document.createElement('a');
@@ -996,5 +1092,6 @@ function downloadSite(){
   URL.revokeObjectURL(a.href);
 }
 </script>
-</body>
-</html>
+
+
+</body></html>
