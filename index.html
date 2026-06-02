@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Radiant Lash & Beauty</title>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Radiant Lash &amp; Beauty</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&amp;family=DM+Sans:wght@300;400;500&amp;display=swap" rel="stylesheet">
 <style>
   *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
   :root{
@@ -155,11 +154,11 @@
 <body>
 
 <!-- PASSWORD GATE -->
-<div id="pw-gate">
+<div id="pw-gate" class="">
   <div id="pw-box">
     <h3>Admin Access</h3>
     <p>Enter your password to edit the site</p>
-    <input id="pw-input" type="password" placeholder="••••••••" />
+    <input id="pw-input" type="password" placeholder="••••••••">
     <button id="pw-submit">Unlock Editor</button>
     <div id="pw-error"></div>
     <button id="pw-cancel">Cancel</button>
@@ -167,78 +166,108 @@
 </div>
 
 <!-- ADMIN PANEL -->
-<div id="admin-overlay">
+<div id="admin-overlay" class="open">
   <div id="admin-box">
     <div id="admin-header">
       <h2>Site <em>Editor</em></h2>
       <button id="admin-close">✕ Close</button>
     </div>
     <div id="admin-tabs">
-      <button class="atab active" data-tab="hero">Hero</button>
+      <button class="atab" data-tab="hero">Hero</button>
       <button class="atab" data-tab="about">About</button>
       <button class="atab" data-tab="services">Services</button>
       <button class="atab" data-tab="quotes">Quotes</button>
-      <button class="atab" data-tab="booking">Booking</button>
+      <button class="atab active" data-tab="booking">Booking</button>
     </div>
     <div id="admin-body">
 
       <!-- HERO TAB -->
-      <div class="tab-panel active" id="tab-hero">
-        <div class="field-group"><label>Location tag (e.g. Thousand Oaks, California)</label><input id="e-eyebrow" /></div>
+      <div class="tab-panel" id="tab-hero">
+        <div class="field-group"><label>Location tag (e.g. Thousand Oaks, California)</label><input id="e-eyebrow"></div>
         <div class="field-group"><label>Hero headline — use [em]word[/em] for italic pink text</label><textarea id="e-title" rows="3"></textarea></div>
         <div class="field-group"><label>Hero subtext</label><textarea id="e-sub"></textarea></div>
-        <div class="field-group"><label>Book button URL</label><input id="e-book-url" /></div>
-        <div class="field-group"><label>Book button label</label><input id="e-book-label" /></div>
+        <div class="field-group"><label>Book button URL</label><input id="e-book-url"></div>
+        <div class="field-group"><label>Book button label</label><input id="e-book-label"></div>
       </div>
 
       <!-- ABOUT TAB -->
       <div class="tab-panel" id="tab-about">
-        <div class="field-group"><label>Section eyebrow</label><input id="e-about-label" /></div>
+        <div class="field-group"><label>Section eyebrow</label><input id="e-about-label"></div>
         <div class="field-group"><label>About headline — use [em]word[/em] for italic</label><textarea id="e-about-title" rows="2"></textarea></div>
         <div class="field-group"><label>About body text</label><textarea id="e-about-body" rows="4"></textarea></div>
-        <div class="field-group"><label>Visual tagline (the quote inside the pink box)</label><input id="e-about-tagline" /></div>
+        <div class="field-group"><label>Visual tagline (the quote inside the pink box)</label><input id="e-about-tagline"></div>
         <p class="section-divider">Stats</p>
         <div class="two-col">
-          <div class="field-group"><label>Stat 1 number</label><input id="e-s1n" /></div>
-          <div class="field-group"><label>Stat 1 label</label><input id="e-s1l" /></div>
-          <div class="field-group"><label>Stat 2 number</label><input id="e-s2n" /></div>
-          <div class="field-group"><label>Stat 2 label</label><input id="e-s2l" /></div>
-          <div class="field-group"><label>Stat 3 number</label><input id="e-s3n" /></div>
-          <div class="field-group"><label>Stat 3 label</label><input id="e-s3l" /></div>
-          <div class="field-group"><label>Stat 4 number</label><input id="e-s4n" /></div>
-          <div class="field-group"><label>Stat 4 label</label><input id="e-s4l" /></div>
+          <div class="field-group"><label>Stat 1 number</label><input id="e-s1n"></div>
+          <div class="field-group"><label>Stat 1 label</label><input id="e-s1l"></div>
+          <div class="field-group"><label>Stat 2 number</label><input id="e-s2n"></div>
+          <div class="field-group"><label>Stat 2 label</label><input id="e-s2l"></div>
+          <div class="field-group"><label>Stat 3 number</label><input id="e-s3n"></div>
+          <div class="field-group"><label>Stat 3 label</label><input id="e-s3l"></div>
+          <div class="field-group"><label>Stat 4 number</label><input id="e-s4n"></div>
+          <div class="field-group"><label>Stat 4 label</label><input id="e-s4l"></div>
         </div>
       </div>
 
       <!-- SERVICES TAB -->
       <div class="tab-panel" id="tab-services">
         <p style="font-size:13px;color:var(--mid);margin-bottom:24px;">Edit each service card below.</p>
-        <div id="services-editor"></div>
+        <div id="services-editor">
+      <div class="service-block">
+        <div class="service-block-title">Service 1</div>
+        <div class="field-group"><label>Name</label><input id="svc-name-0" value="Lash Extensions"></div>
+        <div class="field-group"><label>Description</label><textarea id="svc-desc-0">Classic, hybrid, and volume sets customized to your eye shape and lifestyle. Wake up looking effortlessly beautiful every day.</textarea></div>
+        <div class="field-group"><label>Price / tag line</label><input id="svc-price-0" value="Full Set · Fills Available"></div>
+      </div>
+      <div class="service-block">
+        <div class="service-block-title">Service 2</div>
+        <div class="field-group"><label>Name</label><input id="svc-name-1" value="Brow Services"></div>
+        <div class="field-group"><label>Description</label><textarea id="svc-desc-1">Shaping, tinting, and lamination to frame your face with perfectly sculpted brows tailored to your unique features.</textarea></div>
+        <div class="field-group"><label>Price / tag line</label><input id="svc-price-1" value="Shape · Tint · Lamination"></div>
+      </div>
+      <div class="service-block">
+        <div class="service-block-title">Service 3</div>
+        <div class="field-group"><label>Name</label><input id="svc-name-2" value="Makeup"></div>
+        <div class="field-group"><label>Description</label><textarea id="svc-desc-2">From everyday glam to special occasions, professional makeup application that enhances your natural beauty.</textarea></div>
+        <div class="field-group"><label>Price / tag line</label><input id="svc-price-2" value="Application · Lessons"></div>
+      </div>
+      <div class="service-block">
+        <div class="service-block-title">Service 4</div>
+        <div class="field-group"><label>Name</label><input id="svc-name-3" value="Energy Healing"></div>
+        <div class="field-group"><label>Description</label><textarea id="svc-desc-3">Holistic wellness sessions designed to restore balance, promote calm, and reconnect you with your inner radiance.</textarea></div>
+        <div class="field-group"><label>Price / tag line</label><input id="svc-price-3" value="Healing Sessions"></div>
+      </div>
+      <div class="service-block">
+        <div class="service-block-title">Service 5</div>
+        <div class="field-group"><label>Name</label><input id="svc-name-4" value="Jewelry &amp; Accessories"></div>
+        <div class="field-group"><label>Description</label><textarea id="svc-desc-4">A thoughtfully curated collection of jewelry and accessories through @_radiantcollection to complement your look.</textarea></div>
+        <div class="field-group"><label>Price / tag line</label><input id="svc-price-4" value="Shop In-Studio"></div>
+      </div></div>
       </div>
 
       <!-- QUOTES TAB -->
       <div class="tab-panel" id="tab-quotes">
         <p class="section-divider">Philosophy Section</p>
         <div class="field-group"><label>Big quote</label><textarea id="e-phil-quote" rows="3"></textarea></div>
-        <div class="field-group"><label>Attribution</label><input id="e-phil-attr" /></div>
+        <div class="field-group"><label>Attribution</label><input id="e-phil-attr"></div>
         <p class="section-divider">Client Review 1</p>
         <div class="field-group"><label>Review text</label><textarea id="e-r1"></textarea></div>
-        <div class="field-group"><label>Attribution (e.g. ★★★★★ — Happy Client)</label><input id="e-r1a" /></div>
+        <div class="field-group"><label>Attribution (e.g. ★★★★★ — Happy Client)</label><input id="e-r1a"></div>
         <p class="section-divider">Client Review 2</p>
         <div class="field-group"><label>Review text</label><textarea id="e-r2"></textarea></div>
-        <div class="field-group"><label>Attribution</label><input id="e-r2a" /></div>
+        <div class="field-group"><label>Attribution</label><input id="e-r2a"></div>
       </div>
 
       <!-- BOOKING TAB -->
-      <div class="tab-panel" id="tab-booking">
-        <div class="field-group"><label>Section eyebrow</label><input id="e-bk-label" /></div>
+      <div class="tab-panel active" id="tab-booking">
+        <div class="field-group"><label>Section eyebrow</label><input id="e-bk-label"></div>
         <div class="field-group"><label>Booking headline — use [em]word[/em] for italic</label><textarea id="e-bk-title" rows="2"></textarea></div>
         <div class="field-group"><label>Booking subtext</label><textarea id="e-bk-sub" rows="3"></textarea></div>
-        <div class="field-group"><label>Button label</label><input id="e-bk-btn" /></div>
-        <div class="field-group"><label>Footer tagline</label><input id="e-footer-tag" /></div>
+        <div class="field-group"><label>Button label</label><input id="e-bk-btn"></div>
+        <div class="field-group"><label>Footer tagline</label><input id="e-footer-tag"></div>
       </div>
 
-      <button id="admin-save">⬇ Save & Download Updated Site</button>
+      <button id="admin-save">⬇ Save &amp; Download Updated Site</button>
       <p class="save-note">This downloads a new HTML file with your changes. Replace the old file on GitHub with the new one to update your live site.</p>
     </div>
   </div>
@@ -246,7 +275,7 @@
 
 <!-- NAV -->
 <nav>
-  <span class="nav-logo" id="nav-logo-click">Radiant <span>&</span> Beauty</span>
+  <span class="nav-logo" id="nav-logo-click">Radiant <span>&amp;</span> Beauty</span>
   <ul class="nav-links">
     <li><a href="#services">Services</a></li>
     <li><a href="#about">About</a></li>
@@ -271,7 +300,7 @@
     <div class="hero-visual">
       <div class="hero-badge">
         <div class="hero-badge-icon">✦</div>
-        <div class="hero-badge-text">Radiant<br>Lash & Beauty</div>
+        <div class="hero-badge-text">Radiant<br>Lash &amp; Beauty</div>
         <div class="hero-badge-sub">Est. Newbury Park</div>
       </div>
       <div class="hero-pills">
@@ -288,13 +317,13 @@
   <div class="about-left-visual">
     <div class="about-monogram">R</div>
     <div class="about-text-overlay">
-      <p class="about-tagline" id="about-tagline">"Dedicated to your<br>inner + outer beauty."</p>
+      <p class="about-tagline" id="about-tagline">"Dedicated to your inner + outer beauty."</p>
     </div>
   </div>
   <div class="about-right">
     <p class="section-label" id="about-label">Our Story</p>
     <h2 class="section-title" id="about-title">More Than a<br><em>Beauty Boutique</em></h2>
-    <p class="section-sub" id="about-body">Radiant Lash & Beauty was founded on the belief that true beauty is holistic. We offer a full range of lash and brow services, professional makeup, energy healing, and a curated collection of jewelry and accessories — because you deserve to glow from the inside out.</p>
+    <p class="section-sub" id="about-body">Radiant Lash &amp; Beauty was founded on the belief that true beauty is holistic. We offer a full range of lash and brow services, professional makeup, energy healing, and a curated collection of jewelry and accessories — because you deserve to glow from the inside out.</p>
     <div class="about-stats">
       <div class="stat"><div class="stat-num" id="s1n">100%</div><div class="stat-label" id="s1l">Female-owned</div></div>
       <div class="stat"><div class="stat-num" id="s2n">6+</div><div class="stat-label" id="s2l">Signature services</div></div>
@@ -318,7 +347,7 @@
     <div class="service-card"><div class="service-icon">◇</div><div class="service-name">Brow Services</div><p class="service-desc">Shaping, tinting, and lamination to frame your face with perfectly sculpted brows tailored to your unique features.</p><div class="service-price">Shape · Tint · Lamination</div></div>
     <div class="service-card"><div class="service-icon">○</div><div class="service-name">Makeup</div><p class="service-desc">From everyday glam to special occasions, professional makeup application that enhances your natural beauty.</p><div class="service-price">Application · Lessons</div></div>
     <div class="service-card"><div class="service-icon">∿</div><div class="service-name">Energy Healing</div><p class="service-desc">Holistic wellness sessions designed to restore balance, promote calm, and reconnect you with your inner radiance.</p><div class="service-price">Healing Sessions</div></div>
-    <div class="service-card"><div class="service-icon">◈</div><div class="service-name">Jewelry & Accessories</div><p class="service-desc">A thoughtfully curated collection of jewelry and accessories through @_radiantcollection to complement your look.</p><div class="service-price">Shop In-Studio</div></div>
+    <div class="service-card"><div class="service-icon">◈</div><div class="service-name">Jewelry &amp; Accessories</div><p class="service-desc">A thoughtfully curated collection of jewelry and accessories through @_radiantcollection to complement your look.</p><div class="service-price">Shop In-Studio</div></div>
     <div class="service-card" style="background:var(--blush);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;"><p style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:300;font-style:italic;color:var(--deep-rose);margin-bottom:20px;line-height:1.4;">Ready to experience<br>your radiance?</p><a href="https://radiant-lash-and-beauty.square.site/" target="_blank" class="btn-primary">Book Now →</a></div>
   </div>
 </section>
@@ -327,7 +356,7 @@
 <section class="philosophy">
   <p class="section-label">Our Philosophy</p>
   <p class="philosophy-quote" id="phil-quote">"True beauty is a reflection of how you feel — inside and out. We're here to help you shine."</p>
-  <p class="philosophy-attr" id="phil-attr">— Radiant Lash & Beauty</p>
+  <p class="philosophy-attr" id="phil-attr">— Radiant Lash &amp; Beauty</p>
 </section>
 
 <!-- SPECIALTIES -->
@@ -337,7 +366,7 @@
     <h2 class="section-title">The <em>Radiant</em><br>Difference</h2>
     <div class="specialty-list">
       <div class="specialty-item"><div class="specialty-dot"></div>Personalized consultations for every client</div>
-      <div class="specialty-item"><div class="specialty-dot"></div>Holistic approach to inner & outer beauty</div>
+      <div class="specialty-item"><div class="specialty-dot"></div>Holistic approach to inner &amp; outer beauty</div>
       <div class="specialty-item"><div class="specialty-dot"></div>Female-owned and operated boutique</div>
       <div class="specialty-item"><div class="specialty-dot"></div>Intimate, one-on-one studio experience</div>
       <div class="specialty-item"><div class="specialty-dot"></div>Curated accessories to complete your look</div>
@@ -362,7 +391,7 @@
 
 <!-- BOOKING CTA -->
 <section class="booking" id="book">
-  <p class="section-label" id="bk-label">Ready to Glow?</p>
+  <p class="section-label" id="bk-label">Ready to Glow? (TESTING TESTING)</p>
   <h2 class="section-title" id="bk-title">Book Your<br><em>Experience</em></h2>
   <p class="section-sub" id="bk-sub">Visit our booking page to schedule your appointment. New clients welcome — we can't wait to meet you.</p>
   <a id="bk-btn" href="https://radiant-lash-and-beauty.square.site/" target="_blank" class="btn-primary" style="font-size:13px;padding:16px 40px;">Book an Appointment →</a>
@@ -371,7 +400,7 @@
 <!-- FOOTER -->
 <footer id="contact">
   <div>
-    <span class="footer-logo">Radiant <span>&</span> Beauty</span>
+    <span class="footer-logo">Radiant <span>&amp;</span> Beauty</span>
     <p class="footer-tagline" id="footer-tag">Female-owned boutique dedicated to inner + outer beauty. Thousand Oaks, California.</p>
   </div>
   <div class="footer-col">
@@ -381,7 +410,7 @@
       <li><a href="https://radiant-lash-and-beauty.square.site/" target="_blank">Brow Services</a></li>
       <li><a href="https://radiant-lash-and-beauty.square.site/" target="_blank">Makeup</a></li>
       <li><a href="https://radiant-lash-and-beauty.square.site/" target="_blank">Energy Healing</a></li>
-      <li><a href="https://radiant-lash-and-beauty.square.site/" target="_blank">Jewelry & Accessories</a></li>
+      <li><a href="https://radiant-lash-and-beauty.square.site/" target="_blank">Jewelry &amp; Accessories</a></li>
     </ul>
   </div>
   <div class="footer-col">
@@ -394,7 +423,7 @@
     </ul>
   </div>
   <div class="footer-bottom">
-    <span>© 2026 Radiant Lash & Beauty. All rights reserved.</span>
+    <span>© 2026 Radiant Lash &amp; Beauty. All rights reserved.</span>
     <span>Thousand Oaks, CA</span>
   </div>
 </footer>
@@ -593,5 +622,6 @@ function downloadSite(){
   URL.revokeObjectURL(a.href);
 }
 </script>
-</body>
-</html>
+
+
+</body></html>
